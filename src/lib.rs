@@ -23,7 +23,7 @@ impl zed::Extension for PineScriptExtension {
                 "pine-lsp not found on PATH.\n\n\
                  Install it with:\n\
                  \n\
-                 cargo install --git https://github.com/nuniesmith/pine pine-lsp\n\
+                 cargo install --git https://github.com/nuniesmith/pine-script-zed pine-lsp\n\
                  \n\
                  Then reload Zed."
                     .into()
