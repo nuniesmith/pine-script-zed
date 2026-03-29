@@ -1,0 +1,22 @@
+name = "Pine Script v6"
+grammar = "pinev6"
+path_suffixes = ["pine"]
+line_comments = ["//"]
+block_comment = ["/*", "*/"]
+tab_size = 4
+hard_tabs = false
+
+[brackets]
+pairs = [
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "[", end = "]", close = true, newline = false },
+]
+
+[autoclose]
+pairs = [
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["string", "comment"] },
+  { start = "'", end = "'", close = true, newline = false, not_in = ["string", "comment"] },
+]
+
+[word_characters]
+custom = ["_"]
