@@ -1,2 +1,5 @@
 target/
 *.wasm
+
+# local test files
+*.pine
