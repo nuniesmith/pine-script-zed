@@ -9,3 +9,7 @@ repository = "https://github.com/nuniesmith/pine-script-zed"
 [language_servers.pine-lsp]
 name = "Pine LSP"
 languages = ["Pine Script"]
+
+[grammars.pine]
+repository = "https://github.com/kvarenzn/tree-sitter-pine"
+commit = "b9e8bd4e69d6f98186604cca949cb807f8121b4e"
