@@ -1,5 +1,4 @@
-name = "Pine Script v6"
-grammar = "pinev6"
+name = "Pine Script"
 path_suffixes = ["pine"]
 line_comments = ["//"]
 block_comment = ["/*", "*/"]

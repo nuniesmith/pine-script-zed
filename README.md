@@ -8,29 +8,28 @@ TradingView Pine Script v6 support for the [Zed](https://zed.dev) editor.
 - **Hover docs** — documentation for built-in functions and variables
 - **Completions** — keywords, built-in functions, and variables
 
-## Requirements
+These features are provided by the [`pine-lsp`](https://github.com/nuniesmith/pine-lsp)
+language server.
 
-This extension requires the `pine-lsp` language server binary on your `PATH`.
+## Language server
 
-### Install pine-lsp
+The extension looks for the `pine-lsp` binary in this order:
+
+1. A `pine-lsp` binary already on your `PATH`.
+2. Otherwise, it automatically downloads the latest release from
+   [`nuniesmith/pine-lsp`](https://github.com/nuniesmith/pine-lsp/releases).
+
+No manual setup is required for the common case. If you'd rather install it
+yourself (for example to track a specific version), install it onto your `PATH`:
 
 ```sh
-cargo install --git https://github.com/nuniesmith/pine pine-lsp
-```
-
-Or build from source:
-
-```sh
-git clone https://github.com/nuniesmith/pine.git
-cd pine/src/pine-tools
-cargo install --path pine-lsp
+cargo install --git https://github.com/nuniesmith/pine-lsp pine-lsp
 ```
 
 After installing, restart Zed or run **Developer: Reload Extensions**.
 
 ## License
 
-This extension code is released under the [MIT License](LICENSE).
-
-The `pine-lsp` language server is licensed under the
-[Mozilla Public License 2.0](https://mozilla.org/MPL/2.0/).
+This extension is released under the [MIT License](LICENSE). The
+[`pine-lsp`](https://github.com/nuniesmith/pine-lsp) language server it uses is
+also MIT licensed.
