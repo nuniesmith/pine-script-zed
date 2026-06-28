@@ -3,3 +3,7 @@ target/
 
 # local test files
 *.pine
+
+# Zed grammar build output
+grammars/
+extension.wasm
